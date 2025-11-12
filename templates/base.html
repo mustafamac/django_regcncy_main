@@ -1,0 +1,598 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Regency Urban Developments{% endblock %}</title>
+
+    <!-- CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/icofont.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/flaticon.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/flaticon2.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/owl.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/linearicons.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/custom-animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/jquery.fancybox.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/jquery.mCustomScrollbar.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    <!-- ================================
+        FAVICON / أيقونة الموقع
+        ================================ -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon" />
+    
+    <!--================================
+        RESPONSIVE META TAGS / وسوم الاستجابة
+        ================================ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body class="hidden-bar-wrapper">
+<div class="page-wrapper">
+
+
+<!-- ================================
+            MAIN HEADER / رأس الصفحة الرئيسي
+            ================================ -->
+        <header class="main-header header-style-two">
+            
+            <!-- ================================
+                HEADER LOWER / القسم السفلي للرأس
+            ================================ -->
+            <div class="header-lower">
+                <div class="auto-container clearfix">
+                    <div class="inner-container clearfix">
+                        <!-- LOGO BOX / مربع الشعار -->
+                        <div class="pull-left logo-box">
+                            <div class="logo">
+                                <a class="desk-logo" href=""><img
+                                        src="{% static 'images/wlogo.png' %}" alt=""
+                                        title="" /></a>
+                                <a class="mob-logo" href=""><img
+                                        src="{% static 'images/wlogo.png' %}" alt=""
+                                        title="" /></a>
+                            </div>
+                        </div>
+                        
+                        <!-- NAVIGATION OUTER / الملاح الخارجي -->
+                        <div class="nav-outer clearfix">
+                            
+                            <!-- MOBILE NAV TOGGLER / تبديل الملاح للموبايل -->
+                            <div class="mobile-nav-toggler"><span
+                                    class="icon flaticon-menu-1"></span></div>
+                            
+                            <!-- MAIN MENU / القائمة الرئيسية -->
+                            <nav class="main-menu show navbar-expand-md">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix"
+                                    id="navbarSupportedContent">
+                                    <!-- NAVIGATION LINKS / روابط التنقل -->
+                                    <ul class="navigation clearfix">
+                                        <li class="current"><a href="#">Home</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        
+                                        <!-- PROJECTS DROPDOWN / قائمة المشاريع المنسدلة -->
+                                        {% block project_slider %}
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)">Projects</a>
+                                            
+                                            <ul>
+                                                <li><a href="">Regency Business Tower 1</a></li>
+                                                <li><a href="">Regency Tower 2</a></li>
+                                                <li><a href="">Regency Business Tower 3</a></li>
+                                            </ul>
+                                        </li>
+                                        {% endblock %}
+                                        <!-- MEDIA DROPDOWN / قائمة الوسائط المنسدلة -->
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)">Media</a>
+                                            <ul>
+                                                <li><a href="#">Videos</a></li>
+                                                <li><a href="#">Gallery</a></li>
+                                                <li><a href="#">News</a></li>
+                                            </ul>
+                                        </li>
+                                        {% block page_slider %}
+                                        <li><a href="#">Contact Us</a></li>
+                                        {% endblock %}
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- END MAIN MENU / نهاية القائمة الرئيسية -->
+
+                            <!-- OUTER BOX / الصندوق الخارجي -->
+                            <div class="outer-box clearfix">
+                                
+                                <!-- PHONE BOX / صندوق الهاتف -->
+                                <div class="phone-box">
+                                    <a href="" title="" class="lang-bs"><span
+                                            class="flaticon-headphones-1"></span>
+                                        15773 </a>
+                                </div>
+
+                                <!-- LANGUAGE BOX / صندوق اللغة -->
+                                <div class="lang-box">
+                                    <a href="" title="" class="lang-bs"><span
+                                            class="flaticon-planet-earth"></span>
+                                        Ar </a>
+                                </div>
+
+                                <!-- SEARCH BOX / صندوق البحث -->
+                                <div class="search-box-outer">
+                                    <div class="search-box-btn"><span
+                                            class="fal fa-search"></span></div>
+                                </div>
+
+                                <!-- NAVIGATION BUTTON / زر التنقل -->
+                                <div class="nav-btn navSidebar-button"><span
+                                        class="icon flaticon-menu-1"></span>
+                                </div>
+                            </div>
+                            <!-- END OUTER BOX / نهاية الصندوق الخارجي -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END HEADER LOWER / نهاية القسم السفلي للرأس -->
+
+            <!-- ================================
+                 STICKY HEADER / الرأس الثابت
+                 ================================ -->
+            <div class="sticky-header">
+                
+                <div class="auto-container clearfix">
+                    <!-- STICKY LOGO / شعار الرأس الثابت -->
+                    
+                    <div class="logo pull-left">
+                        <a href="" title=""><img src="{% static 'images/logo.png' %}" alt=""
+                                title="" /></a>
+                    </div>
+                    
+
+                    <!--RIGHT COL / العمود الأيمن -->
+                    <div class="pull-right">
+                        <!-- STICKY MENU / القائمة الثابتة -->
+                        <nav class="main-menu">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </nav>
+
+                        <!-- STICKY OUTER BOX / الصندوق الخارجي الثابت -->
+                        <div class="outer-box clearfix">
+                            <div class="search-box-outer">
+                                <div class="search-box-btn"><span
+                                        class="fal fa-search"></span></div>
+                            </div>
+                            <div class="nav-btn navSidebar-button"><span
+                                    class="icon flaticon-menu-1"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END STICKY HEADER / نهاية الرأس الثابت -->
+
+            <!-- ================================
+                 MOBILE MENU / القائمة المحمولة
+                 ================================ -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn"><span
+                        class="icon flaticon-multiply"></span></div>
+
+                <nav class="menu-box">
+                    <!-- MOBILE LOGO / شعار القائمة المحمولة -->
+                    <div class="nav-logo">
+                        <a href=""><img src="{% static 'images/logo.png' %}" alt=""
+                                title="" /></a>
+                    </div>
+                    
+                    <!-- MOBILE MENU ITEMS / عناصر القائمة المحمولة -->
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript-->
+                    </div>
+
+                    <!-- MOBILE SOCIAL MEDIA / وسائل التواصل الاجتماعي للمحمول -->
+                    <div class="sidebar__social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- MOBILE COPYRIGHT / حقوق الطبع للمحمول -->
+                    <div class="copyleft">&copy; 2022 Regency Urban Development
+                        All Rights Reserved</div>
+                </nav>
+            </div>
+            <!-- END MOBILE MENU / نهاية القائمة المحمولة -->
+        </header>
+        <!-- END MAIN HEADER / نهاية رأس الصفحة الرئيسي -->
+
+        <!-- ================================
+        SIDEBAR WIDGET / أداة الشريط الجانبي
+        ================================ -->
+        <div class="xs-sidebar-group info-group">
+            <div class="xs-overlay xs-bg-black"></div>
+            <div class="xs-sidebar-widget">
+                <div class="sidebar-widget-container">
+                    <!-- SIDEBAR CLOSE BUTTON / زر إغلاق الشريط الجانبي -->
+                    <div class="widget-heading">
+                        <a href="#" class="close-side-widget">
+                            <i class="fal fa-times"></i>
+                        </a>
+                    </div>
+
+                    <!-- SIDEBAR TEXT CONTENT / محتوى نص الشريط الجانبي -->
+                    <div class="sidebar-textwidget">
+                        <div class="side-navigation">
+                            <div class="side-content">
+                                <!-- SIDEBAR LOGO / شعار الشريط الجانبي -->
+                                <figure><img src="{% static 'images/logo.png' %}" alt="Image"></figure>
+                                
+                                <!-- SIDEBAR DESCRIPTION / وصف الشريط الجانبي -->
+                                <p>Regency Urban Developments is among the
+                                    leading companies in the real estate sector
+                                    in Egypt and the Middle East through the
+                                    alliance of a group of real estate and
+                                    economic experience and successes for
+                                    various real estate developments and
+                                    investment companies and entities over 30
+                                    years.</p>
+                                
+                                <!-- SIDEBAR GALLERY / معرض الشريط الجانبي -->
+                                <ul class="gallery"
+                                    style="position: relative; height: 125.2px;">
+                                    <li><a href="{% static 'images/Tower-1.jpg' %}"
+                                            data-fancybox=""><img
+                                                src="{% static 'images/Tower-1.jpg' %}"
+                                                alt="Image"></a></li>
+                                    <li><a href="{% static 'images/Tower-2.jpg' %}"
+                                            data-fancybox=""><img
+                                                src="{% static 'images/Tower-2.jpg' %}"
+                                                alt="Image"></a></li>
+                                    <li><a href="{% static 'images/Tower-3.jpg' %}"
+                                            data-fancybox=""><img
+                                                src="{% static 'images/Tower-3.jpg' %}"
+                                                alt="Image"></a></li>
+                                </ul>
+                                
+                                <!-- SIDEBAR CONTACT INFO / معلومات الاتصال بالشريط الجانبي -->
+                                <address>
+                                    220 Crown Building ,floor no 2 ,New Cairo,
+                                    Egypt
+                                </address>
+                                <h6>Hotoline : 15773</h6>
+                                <p><a href="#">info@regencyud.com</a></p>
+                                
+                                <!-- SIDEBAR SOCIAL MEDIA / وسائل التواصل الاجتماعي للشريط الجانبي -->
+                                <ul class="social-media">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                                
+                                <!-- SIDEBAR COPYRIGHT / حقوق الطبع بالشريط الجانبي -->
+                                <small> 2022 @ copyright Regency Urban Development</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SIDEBAR WIDGET / نهاية أداة الشريط الجانبي -->
+
+    <!-- ================================
+    MAIN SLIDER SECTION / قسم السلايدر الرئيسي
+    ================================ -->
+    {% block background_slider %}
+        <section class="main-slider-two">
+            <!-- SLIDER CAROUSEL / سلايدر المعرض -->
+            <div class="main-slider-carousel owl-carousel owl-theme">
+                
+                <!-- SLIDE 1 / الشريحة الأولى -->
+                <div class="slide">
+                    <img src="{% static 'images/Tower-1.jpg' %}" />
+                    <div class="pattern-layer-one"
+                    
+                
+                        style="background-image: url({% static 'images/pattern-15.png' %});">
+                    </div>
+                
+                    <div class="pattern-layer-two"
+                        style="background-image: url({% static 'images/pattern-16.png' %});">
+                    </div>
+                    <div class="container">
+                        <div class="content-boxed">
+                            <div class="inner-box">
+                                <h1>urban developments</h1>
+                                <div class="text">Luxurious Business Destinations.</div>
+                                <div class="btns-box">
+                                    <a href="" class="theme-btn btn-style-two">
+                                        <span class="txt">Read More <i
+                                                class="lnr lnr-arrow-right"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 / الشريحة الثانية -->
+                <div class="slide">
+                    <img src="{% static 'images/Tower-2.jpg' %}" />
+                    <div class="pattern-layer-one"
+                        style="background-image: url({% static 'images/pattern-15.png' %});">
+                    </div>
+                    <div class="pattern-layer-two"
+                        style="background-image: url({% static 'images/pattern-16.png' %});">
+                    </div>
+                    <div class="container">
+                        <div class="content-boxed">
+                            <div class="inner-box">
+                                <h1>urban developments</h1>
+                                <div class="text">Luxurious Business Destinations.</div>
+                                <div class="btns-box">
+                                    <a href="" class="theme-btn btn-style-two">
+                                        <span class="txt">Read More <i
+                                                class="lnr lnr-arrow-right"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 / الشريحة الثالثة -->
+                <div class="slide">
+                    <img src="{% static 'images/Tower-3.jpg' %}" />
+                    <div class="pattern-layer-one"
+                        style="background-image: url({% static 'images/pattern-15.png' %});">
+                    </div>
+                    <div class="pattern-layer-two"
+                        style="background-image: url({% static 'images/pattern-16.png' %});">
+                    </div>
+                    <div class="container">
+                        <div class="content-boxed">
+                            <div class="inner-box">
+                                <h1>urban developments</h1>
+                                <div class="text">Luxurious Business Destinations.</div>
+                                <div class="btns-box">
+                                    <a href="" class="theme-btn btn-style-two">
+                                        <span class="txt">Read More <i
+                                                class="lnr lnr-arrow-right"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </section>
+    {% endblock %}
+        <!-- END MAIN SLIDER / نهاية قسم السلايدر الرئيسي -->
+
+    <!-- هنا هيتحط كل محتوى الصفحات -->
+    {% block content %}{% endblock %}
+
+      <!-- ================================
+             MAIN FOOTER / التذييل الرئيسي
+             ================================ -->
+        <footer class="main-footer">
+            <div class="auto-container">
+                <div class="row">
+                    <!-- FOOTER LOGO COLUMN / عمود شعار التذييل -->
+                    <div class="col-md-3 col-xs-12">
+                        <div class="widgets-section">
+                            <div class="footer-logo">
+                                <img src="{% static 'images/logo.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER CONTACT INFO COLUMN / عمود معلومات الاتصال بالتذييل -->
+                    <div class="col-md-3 col-xs-12">
+                        <div class="widgets-section">
+                            <h3 class="widget_title">contact info</h3>
+                            <!-- CONTACT INFO LIST / قائمة معلومات الاتصال -->
+                            <ul class="contact-info-list">
+                                <!-- ADDRESS / العنوان -->
+                                <li>
+                                    <span class="icon"><i class="flaticon-map"></i></span>
+                                    <p>Address</p>
+                                    <a href="" title="">220 Crown Building ,floor no 2 ,New Cairo, Egypt</a>
+                                </li>
+
+                                <!-- EMAIL / البريد الإلكتروني -->
+                                <li>
+                                    <span class="icon"><i class="flaticon-envelope"></i></span>
+                                    <p>Mail address</p>
+                                    <a href="mailto:info@regencyud.com">info@regencyud.com</a>
+                                </li>
+
+                                <!-- PHONE / الهاتف -->
+                                <li>
+                                    <span class="icon"><i class="flaticon-headphones-1"></i></span>
+                                    <p>Hotline</p>
+                                    <a href="tel:+15773">15773</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER QUICK LINKS COLUMN / عمود الروابط السريعة بالتذييل -->
+                    <div class="col-md-3 col-xs-12 desk-logo">
+                        <div class="widgets-section">
+                            <h3 class="widget_title">Quick link</h3>
+                            <!-- QUICK LINKS LIST / قائمة الروابط السريعة -->
+                            <ul class="quick-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER NEWSLETTER COLUMN / عمود النشرة البريدية بالتذييل -->
+                    <div class="col-md-3 col-xs-12">
+                        <div class="widgets-section">
+                            <h3 class="widget_title">newsletter</h3>
+                            <div class="text">Subscribe to our newsletter!</div>
+
+                            <!-- NEWSLETTER FORM / نموذج النشرة البريدية -->
+                            <div class="newsletter-form">
+                                <form method="post" action="">
+                                    <div class="form-group">
+                                        <input type="email" name="email"
+                                            value=""
+                                            placeholder="Your Email Address"
+                                            required="" />
+                                        <button type="submit">
+                                            <i class="fal fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- FOOTER SOCIAL MEDIA / وسائل التواصل الاجتماعي بالتذييل -->
+                            <ul class="social-box">
+                                <li><a href="" class="fab fa-facebook-f"></a></li>
+                                <li><a href="" class="fab fa-twitter"></a></li>
+                                <li><a href="" class="fab fa-linkedin-in"></a></li>
+                                <li><a href="" class="fab fa-instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM / قاع التذييل -->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <!-- FOOTER COPYRIGHT / حقوق الطبع بالتذييل -->
+                    <div class="copyright">&copy; 2022 Regency Urban Development
+                        All Rights Reserved</div>
+                </div>
+            </div>
+        </footer>
+        <!-- END MAIN FOOTER / نهاية التذييل الرئيسي -->
+
+    </div>
+
+    <!-- ================================
+         SEARCH POPUP / النافذة المنبثقة للبحث
+         ================================ -->
+    <div class="search-popup">
+        <div class="color-layer"></div>
+        <button class="close-search"><span class="fal fa-arrow-up"></span></button>
+        <!-- SEARCH FORM / نموذج البحث -->
+        <form method="post" action="">
+            <div class="form-group">
+                <input type="search" name="search-field" value=""
+                    placeholder="Search Here" required="" />
+                <button type="submit"><i class="fal fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- END SEARCH POPUP / نهاية النافذة المنبثقة للبحث -->
+
+    <!-- ================================
+         FLOATING ACTION BUTTONS / أزرار الإجراء العائمة
+         ================================ -->
+    <div class="all-ioc">
+        <!-- SHOW ICONS BUTTON / زر عرض الأيقونات -->
+        <div class="show-icons">
+            <div class="ico-img"></div>
+            <div class="sonar-wave"></div>
+            <div class="sonar-wave2"></div>
+        </div>
+
+        <!-- WHATSAPP ICON / أيقونة واتس آب -->
+        <div class="whats-icon" data-target="html">
+            <a href="https://api.whatsapp.com/send?phone=+"><span class="icon fab fa-whatsapp"></span></a>
+        </div>
+
+        <!-- FACEBOOK MESSENGER ICON / أيقونة فيسبوك ماسنجر -->
+        <div class="messenger-icon" data-target="html">
+            <a href="https://m.me/"><span class="icon fab fa-facebook-messenger"></span></a>
+        </div>
+
+        <!-- PHONE ICON / أيقونة الهاتف -->
+        <div class="phone-icon" data-target="html">
+            <a href="tel:"><span class="icon fal fa-phone"></span></a>
+        </div>
+    </div>
+
+    <!-- ================================
+         SCROLL TO TOP BUTTON / زر العودة للأعلى
+         ================================ -->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fal fa-arrow-up"></span></div>
+
+
+<!-- ================================
+        JAVASCRIPT FILES / ملفات جافا سكريبت
+        ================================ -->
+<!-- JQUERY / مكتبة جيكوري -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<!-- POPPER / مكتبة بوبر -->
+<script src="{% static 'js/popper.min.js' %}"></script>
+<!-- BOOTSTRAP JS / جافا سكريبت بوت ستراب -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- CUSTOM SCROLLBAR / شريط التمرير المخصص -->
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<!-- FANCYBOX / صندوق فانسي للصور -->
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<!-- PARALLAX / تأثير متوازي -->
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<!-- PAROLLER / متوازي التمرير -->
+<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+<!-- WAYPOINTS / نقاط المراقبة -->
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<!-- COUNTERUP / العداد المتحرك -->
+<script src="{% static 'js/counterup.min.js' %}"></script>
+<!-- OWL CAROUSEL / معرض بومة -->
+<script src="{% static 'js/owl.js' %}"></script>
+<!-- NAVIGATION TOOLS / أدوات التنقل -->
+<script src="{% static 'js/nav-tool.js' %}"></script>
+<!-- CUSTOM SCRIPT / البرنامج المخصص -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

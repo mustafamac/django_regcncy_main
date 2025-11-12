@@ -1,0 +1,535 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ================================
+     PROJECT TITLE SECTION
+     ================================ -->
+
+<!-- END PAGE TITLE SECTION -->
+
+<!-- ================================
+     PROJECT DETAILS SECTION
+     ================================ -->
+<section class="project-details-section p-t80 p-b50">
+    <div class="auto-container">
+        
+        <!-- PROJECT GALLERY GRID - صور المشروع بشكل شبكة -->
+        <div class="row m-b80">
+            <div class="col-lg-12">
+                <div class="project-gallery-grid">
+                    <div class="row">
+                        <!-- الصورة الأولى - كبيرة -->
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="iter">
+                                <div class="portfolio_c portfolio-item-main tile scale-anm">
+                                    <div class="portfolio-img">
+                                        <img src="{% static 'images/Tower-1.jpg' %}" alt="Project Main Image">
+                                        <div class="tyo">
+                                            <span class="fal fa-search-plus"></span>
+                                            <div class="curl"></div>
+                                            <a href="{% static 'images/Tower-1.jpg' %}" data-fancybox="project-gallery"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- الصور الصغيرة -->
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row">
+                                <!-- صورة 2 -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="iter">
+                                        <div class="portfolio_c portfolio-item-small tile scale-anm">
+                                            <div class="portfolio-img">
+                                                <img src="{% static 'images/Tower-2.jpg' %}" alt="Project Image 2">
+                                                <div class="tyo">
+                                                    <span class="fal fa-search-plus"></span>
+                                                    <div class="curl"></div>
+                                                    <a href="{% static 'images/Tower-2.jpg' %}" data-fancybox="project-gallery"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- صورة 3 -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="iter">
+                                        <div class="portfolio_c portfolio-item-small tile scale-anm">
+                                            <div class="portfolio-img">
+                                                <img src="{% static 'images/Tower-3.jpg' %}" alt="Project Image 3">
+                                                <div class="tyo">
+                                                    <span class="fal fa-search-plus"></span>
+                                                    <div class="curl"></div>
+                                                    <a href="{% static 'images/Tower-3.jpg' %}" data-fancybox="project-gallery"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- صورة 4 -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="iter">
+                                        <div class="portfolio_c portfolio-item-small tile scale-anm">
+                                            <div class="portfolio-img">
+                                                <img src="{% static 'images/Tower-1.jpg' %}" alt="Project Image 4">
+                                                <div class="tyo">
+                                                    <span class="fal fa-search-plus"></span>
+                                                    <div class="curl"></div>
+                                                    <a href="{% static 'images/Tower-1.jpg' %}" data-fancybox="project-gallery"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- صورة 5 -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="iter">
+                                        <div class="portfolio_c portfolio-item-small tile scale-anm">
+                                            <div class="portfolio-img">
+                                                <img src="{% static 'images/Tower-2.jpg' %}" alt="Project Image 5">
+                                                <div class="tyo">
+                                                    <span class="fal fa-search-plus"></span>
+                                                    <div class="curl"></div>
+                                                    <a href="{% static 'images/Tower-2.jpg' %}" data-fancybox="project-gallery"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT CONTENT -->
+        <div class="row">
+            <!-- LEFT COLUMN - PROJECT INFO -->
+            <div class="col-lg-8">
+                <!-- PROJECT OVERVIEW -->
+                <div class="project-overview m-b50">
+                    <div class="sec-title">
+                        <h2>Project Overview</h2>
+                        <div class="bar"></div>
+                    </div>
+                    <p>Luxurious Business Destination offering premium office spaces in the heart of the New Capital City. 
+                    Regency Business Tower 1 represents a pinnacle of modern commercial architecture, designed to meet 
+                    the evolving needs of contemporary businesses.</p>
+                    <p>With state-of-the-art facilities and premium amenities, this tower stands as a testament to our 
+                    commitment to excellence and innovation in real estate development.</p>
+                </div>
+
+                <!-- PROJECT FEATURES -->
+                <div class="project-features m-b50">
+                    <div class="sec-title">
+                        <h2>Key Features</h2>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="features-list">
+                        <ul>
+                            <li><i class="fal fa-check"></i> Modern Office Spaces</li>
+                            <li><i class="fal fa-check"></i> Premium Amenities</li>
+                            <li><i class="fal fa-check"></i> 24/7 Security</li>
+                            <li><i class="fal fa-check"></i> Advanced Technology Infrastructure</li>
+                            <li><i class="fal fa-check"></i> Ample Parking Facilities</li>
+                            <li><i class="fal fa-check"></i> Green Building Standards</li>
+                            <li><i class="fal fa-check"></i> Flexible Lease Terms</li>
+                            <li><i class="fal fa-check"></i> Professional Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PROJECT DESCRIPTION -->
+                <div class="project-description">
+                    <div class="sec-title">
+                        <h2>About This Project</h2>
+                        <div class="bar"></div>
+                    </div>
+                    <p>Regency Business Tower 1 is strategically located in the heart of New Capital City's Downtown District. 
+                    The tower features meticulously designed office spaces tailored to accommodate businesses of all sizes, 
+                    from startups to multinational corporations.</p>
+                    
+                    <p>Our commitment to sustainability is evident throughout the building, with eco-friendly construction 
+                    materials and energy-efficient systems. The tower's intelligent building management system ensures optimal 
+                    comfort and operational efficiency for all tenants.</p>
+
+                    <p>Each floor is equipped with modern facilities including high-speed internet connectivity, advanced 
+                    telecommunications infrastructure, and flexible space configurations to adapt to your specific business needs.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN - PROJECT DETAILS -->
+            <div class="col-lg-4">
+                <!-- PROJECT INFO BOX -->
+                <div class="project-info-box">
+                    <div class="info-item">
+                        <h4>Project Name</h4>
+                        <p>Regency Business Tower 1</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Location</h4>
+                        <p>Downtown, New Capital City, Egypt</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Project Status</h4>
+                        <p>Under Construction</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Total Area</h4>
+                        <p>50,000 m²</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Starting Price</h4>
+                        <p>Contact us for details</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Expected Completion</h4>
+                        <p>Q4 2024</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Developer</h4>
+                        <p>Regency Urban Developments</p>
+                    </div>
+
+                    <div class="info-item" style="margin-top: 30px;">
+                        <a href="#contact-form" class="theme-btn btn-style-four btn-block" style="width: 100%; text-align: center;">
+                            <span class="txt">Inquiry Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END PROJECT DETAILS SECTION -->
+
+<!-- ================================
+     CONTACT FORM SECTION
+     ================================ -->
+<section class="faq-section">
+    <div class="auto-container">
+        <div class="row align-items-center clearfix">
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column"></div>
+            </div>
+
+            <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="content-column">
+                        <div class="inner-column">
+                            <div class="sec-title">
+                                <h2>get in touch </h2>
+                                <p>Need more information? </p>
+                            </div>
+
+                            <div class="default-form">
+                                <form method="post" action="#">
+                                    <div class="row clearfix">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="username" placeholder="First Name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="username" placeholder="Last Name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="phone" placeholder="Phone" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                            <input type="text" name="mail" placeholder="Email" required>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                            <textarea name="message" placeholder="Write Your Message Here"></textarea>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form">
+                                                <span class="txt">SEND</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CONTACT FORM SECTION -->
+
+<!-- ================================
+     RELATED PROJECTS SECTION
+     ================================ -->
+<section class="related-projects-section p-b50">
+    <div class="auto-container">
+        <div class="sec-title text-center m-b50">
+            <h2>Related Projects</h2>
+            <div class="bar"></div>
+        </div>
+
+        <div class="related-carousel owl-carousel custom-nav">
+            <div class="iter">
+                <div class="portfolio_c tg_two_cols portfolio-1 tile scale-anm all no_filter">
+                    <div class="portfolio-img">
+                        <img src="{% static 'images/Tower-2.jpg' %}" alt="">
+                        <div class="tyo">
+                            <span class="fal fa-arrow-right"></span>
+                            <div class="curl"></div>
+                            <a href="/projects/tower-2/"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="portfolio_classic_content">
+                        <h3 class="portfolio_classic_title"><a href="/projects/tower-2/">Regency Tower 2</a></h3>
+                        <div class="portfolio_classic_subtitle">Downtown, New Capital City</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iter">
+                <div class="portfolio_c tg_two_cols portfolio-1 tile scale-anm all no_filter">
+                    <div class="portfolio-img">
+                        <img src="{% static 'images/Tower-3.jpg' %}" alt="">
+                        <div class="tyo">
+                            <span class="fal fa-arrow-right"></span>
+                            <div class="curl"></div>
+                            <a href="/projects/tower-3/"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="portfolio_classic_content">
+                        <h3 class="portfolio_classic_title"><a href="/projects/tower-3/">Regency Business Tower 3</a></h3>
+                        <div class="portfolio_classic_subtitle">Downtown, New Capital City</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END RELATED PROJECTS SECTION -->
+
+<style>
+.project-gallery-grid {
+    margin-bottom: 50px;
+}
+
+.portfolio-item-main {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-item-main .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item-small {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.portfolio-item-small .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-img img {
+    transition: all 0.3s ease;
+}
+
+.tyo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.iter:hover .tyo {
+    opacity: 1;
+}
+
+.iter:hover .portfolio-img img {
+    transform: scale(1.1);
+}
+
+.tyo span {
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.tyo a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.curl {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, transparent 50%, #007bff 50%);
+    top: 0;
+    right: 0;
+}
+
+.project-info-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.info-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.features-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #555;
+}
+
+.features-list i {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.project-overview,
+.project-features,
+.project-description {
+    margin-bottom: 50px;
+}
+
+.project-description p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.sec-title {
+    margin-bottom: 30px;
+}
+
+.sec-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sec-title .bar {
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+    margin-top: 15px;
+}
+
+.p-t80 {
+    padding-top: 80px;
+}
+
+.p-b50 {
+    padding-bottom: 50px;
+}
+
+.m-b50 {
+    margin-bottom: 50px;
+}
+
+.m-b80 {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item-main {
+        height: 250px;
+    }
+
+    .portfolio-item-small {
+        height: 150px;
+    }
+
+    .features-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    .col-lg-8,
+    .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+</style>
+
+{% endblock %}

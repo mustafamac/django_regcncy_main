@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_slider %}{% endblock %}
+{% block content %}
+
+
+
+        <!-- ================================
+             COUNTER SECTION / قسم العد الإحصائي
+             ================================ -->
+        <section class="counter-area">
+            <div class="auto-container">
+                <div class="row align-iems-center">
+                    <!-- COUNTER 1: EXPERIENCE YEARS / العداد 1: سنوات الخبرة -->
+                    <div class="col-md-3 col-6">
+                        <div class="counter-item">
+                            <i class="flaticon-medal"></i>
+                            <h3><span class="counter">30</span></h3>
+                            <p>Experience <br> of Years</p>
+                        </div>
+                    </div>
+
+                    <!-- COUNTER 2: TEAM MEMBERS / العداد 2: أعضاء الفريق -->
+                    <div class="col-md-3 col-6">
+                        <div class="counter-item">
+                            <i class="flaticon-team"></i>
+                            <h3><span class="counter">99</span></h3>
+                            <p>Our Experience <br> Team </p>
+                        </div>
+                    </div>
+
+                    <!-- COUNTER 3: BUILDINGS UNDER CONSTRUCTION / العداد 3: المباني تحت الإنشاء -->
+                    <div class="col-md-3 col-6">
+                        <div class="counter-item">
+                            <i class="flaticon-pencil-and-ruler"></i>
+                            <h3><span class="counter">3</span></h3>
+                            <p>Building Under <br> Construction</p>
+                        </div>
+                    </div>
+
+                    <!-- COUNTER 4: COMPLETED PROJECTS / العداد 4: المشاريع المكتملة -->
+                    <div class="col-md-3 col-6">
+                        <div class="counter-item">
+                            <i class="flaticon-home"></i>
+                            <h3><span class="counter">5</span></h3>
+                            <p>Completed <br> Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END COUNTER SECTION / نهاية قسم العد الإحصائي -->
+
+        <!-- ================================
+             CONTACT FORM SECTION / قسم نموذج التواصل
+             ================================ -->
+       
+             <section class="faq-section">
+            <div class="auto-container">
+                <div class="row align-items-center clearfix">
+                    <!-- IMAGE COLUMN / عمود الصورة -->
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                        </div>
+                    </div>
+
+                    <!-- FORM COLUMN / عمود النموذج -->
+                    <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <!-- CONTACT FORM CONTENT / محتوى نموذج الاتصال -->
+                            <div class="content-column">
+                                <div class="inner-column">
+                                    <!-- FORM TITLE / عنوان النموذج -->
+                                    <div class="sec-title">
+                                        <h2>get in touch </h2>
+                                        <p>Need more information? </p>
+                                    </div>
+
+                                    <!-- CONTACT FORM / نموذج الاتصال -->
+                                    <div class="default-form">
+                                        <form method="post" action="#">
+                                            <div class="row clearfix">
+                                                <!-- FIRST NAME FIELD / حقل الاسم الأول -->
+                                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                    <input type="text"
+                                                        name="username"
+                                                        placeholder="First Name"
+                                                        required>
+                                                </div>
+
+                                                <!-- LAST NAME FIELD / حقل الاسم الأخير -->
+                                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                    <input type="text"
+                                                        name="username"
+                                                        placeholder="Last Name"
+                                                        required>
+                                                </div>
+
+                                                <!-- PHONE FIELD / حقل الهاتف -->
+                                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                    <input type="text"
+                                                        name="phone"
+                                                        placeholder="Phone"
+                                                        required>
+                                                </div>
+
+                                                <!-- EMAIL FIELD / حقل البريد الإلكتروني -->
+                                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                                    <input type="text"
+                                                        name="mail"
+                                                        placeholder="Email"
+                                                        required>
+                                                </div>
+
+                                                <!-- MESSAGE FIELD / حقل الرسالة -->
+                                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                    <textarea name="message"
+                                                        placeholder="Write Your Message Here"></textarea>
+                                                </div>
+
+                                                <!-- SUBMIT BUTTON / زر الإرسال -->
+                                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                                    <button
+                                                        class="theme-btn btn-style-four"
+                                                        type="submit"
+                                                        name="submit-form"><span class="txt">SEND</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- END CONTACT FORM / نهاية نموذج الاتصال -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+{% endblock %}

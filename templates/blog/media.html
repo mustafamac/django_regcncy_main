@@ -1,0 +1,371 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ================================
+     IMAGES SECTION / قسم الصور
+     ================================ -->
+<div class="portfolio-block portfolio-block-5bb35973dede2 popup-gallery">
+    <div class="auto-container">
+        <!-- IMAGES TITLE / عنوان الصور -->
+        <div class="sec-title centered">
+            <h2>Images</h2>
+            <div class="bar"></div>
+        </div>
+
+        <!-- IMAGES BACKGROUND SHAPE / شكل خلفية الصور -->
+        <div class="all-time-hit-two-bg-shape"
+            style="background-image: url({% static 'images/all-time-hit-two-bg-shape.webp' %});">
+        </div>
+
+        <!-- IMAGES CAROUSEL / معرض الصور -->
+        <div class="galvid owl-carousel custom-nav">
+            <!-- IMAGE 1 / الصورة 1 -->
+            <div class="iter">
+                <div class="portfolio_c tg_two_cols portfolio-1 tile scale-anm all no_filter">
+                    <div class="portfolio-img">
+                        <img src="{% static 'images/Tower-1.jpg' %}" alt="">
+                        <div class="tyo">
+                            <span class="fal fa-arrow-right"></span>
+                            <div class="curl"></div>
+                            <a href="{% static 'images/Tower-1.jpg' %}" data-fancybox="gallery"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="portfolio_classic_content">
+                        <h3 class="portfolio_classic_title"><a href="#">Tower Exterior View</a></h3>
+                        <div class="portfolio_classic_subtitle">Stunning modern architecture</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE 2 / الصورة 2 -->
+            <div class="iter">
+                <div class="portfolio_c tg_two_cols portfolio-1 tile scale-anm all no_filter">
+                    <div class="portfolio-img">
+                        <img src="{% static 'images/Tower-2.jpg' %}" alt="">
+                        <div class="tyo">
+                            <span class="fal fa-arrow-right"></span>
+                            <div class="curl"></div>
+                            <a href="{% static 'images/Tower-2.jpg' %}" data-fancybox="gallery"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="portfolio_classic_content">
+                        <h3 class="portfolio_classic_title"><a href="#">Office Spaces</a></h3>
+                        <div class="portfolio_classic_subtitle">Premium office design</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE 3 / الصورة 3 -->
+            <div class="iter">
+                <div class="portfolio_c tg_two_cols portfolio-1 tile scale-anm all no_filter">
+                    <div class="portfolio-img">
+                        <img src="{% static 'images/Tower-3.jpg' %}" alt="">
+                        <div class="tyo">
+                            <span class="fal fa-arrow-right"></span>
+                            <div class="curl"></div>
+                            <a href="{% static 'images/Tower-3.jpg' %}" data-fancybox="gallery"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="portfolio_classic_content">
+                        <h3 class="portfolio_classic_title"><a href="#">Lobby Design</a></h3>
+                        <div class="portfolio_classic_subtitle">Modern entrance hall</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END IMAGES SECTION / نهاية قسم الصور -->
+
+<!-- ================================
+     VIDEOS SECTION / قسم الفيديوهات
+     ================================ -->
+<section class="videos-section">
+    <div class="auto-container">
+        <!-- VIDEOS TITLE / عنوان الفيديوهات -->
+        <div class="sec-title centered">
+            <h2>Videos</h2>
+            <div class="bar"></div>
+        </div>
+
+        <!-- VIDEOS CAROUSEL / معرض الفيديوهات -->
+        <div class="owl-carousel three-item-carousel custom-nav">
+            
+            <!-- VIDEO BLOCK 1 / كتلة الفيديو الأول -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-1.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Building Tour - Exterior</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO BLOCK 2 / كتلة الفيديو الثاني -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-2.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Office Spaces Overview</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO BLOCK 3 / كتلة الفيديو الثالث -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-3.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Amenities & Facilities</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO BLOCK 4 / كتلة الفيديو الرابع -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-1.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Virtual Tour 360</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO BLOCK 5 / كتلة الفيديو الخامس -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-2.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Construction Progress</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO BLOCK 6 / كتلة الفيديو السادس -->
+            <div class="video-block">
+                <div class="inner-box">
+                    <!-- VIDEO IMAGE / صورة الفيديو -->
+                    <div class="image">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">
+                            <img src="{% static 'images/Tower-3.jpg' %}" alt="" />
+                            <div class="play-overlay">
+                                <i class="fal fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIDEO CONTENT / محتوى الفيديو -->
+                    <div class="lower-content">
+                        <h5><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-fancybox="video">Project Highlights</a></h5>
+                        <!-- VIDEO META / معلومات الفيديو -->
+                        <ul class="post-meta">
+                            <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="read-more" data-fancybox="video"><span class="txt">Watch Video</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END VIDEOS SECTION / نهاية قسم الفيديوهات -->
+
+<style>
+/* PLAY OVERLAY */
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.image:hover .play-overlay {
+    opacity: 1;
+}
+
+.play-overlay i {
+    color: white;
+    font-size: 40px;
+}
+
+/* VIDEO BLOCK */
+.video-block {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.video-block:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.video-block .image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.video-block .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-block:hover .image img {
+    transform: scale(1.05);
+}
+
+.video-block .inner-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-block .lower-content {
+    padding: 20px;
+}
+
+.video-block h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.video-block h5 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.video-block h5 a:hover {
+    color: #007bff;
+}
+
+.video-block .post-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.video-block .read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.video-block .read-more:hover {
+    color: #0056b3;
+}
+
+.video-block .read-more .txt {
+    display: inline-block;
+}
+
+/* IMAGE STYLES */
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* UTILITIES */
+.clearfix {
+    clear: both;
+}
+</style>
+
+{% endblock %}

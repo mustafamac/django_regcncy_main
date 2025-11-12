@@ -1,0 +1,80 @@
+{%extends "base.html"%}
+{%load static%}
+{%block content%}
+
+        <!-- ================================
+             NEWS SECTION / قسم الأخبار
+             ================================ -->
+        <section class="news-section">
+            <div class="auto-container">
+                <!-- NEWS TITLE / عنوان الأخبار -->
+                <div class="sec-title centered">
+                    <h2>Latest News</h2>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- NEWS CAROUSEL / معرض الأخبار -->
+                <div class="owl-carousel three-item-carousel custom-nav">
+                    
+                    <!-- NEWS BLOCK 1 / كتلة الخبر الأول -->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <!-- NEWS IMAGE / صورة الخبر -->
+                            <div class="image">
+                                <a href=""><img src="{% static 'images/news1.jpg' %}" alt="" /></a>
+                            </div>
+                            <!-- NEWS CONTENT / محتوى الخبر -->
+                            <div class="lower-content">
+                                <h5><a href="">urban developments Luxurious Business Destinations.</a></h5>
+                                <!-- NEWS META / معلومات الخبر -->
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-calendar"></span>15 Augst 2022</li>
+                                    <a href="" class="read-more"><span class="txt">Read More</span></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEWS BLOCK 2 / كتلة الخبر الثاني -->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <!-- NEWS IMAGE / صورة الخبر -->
+                            <div class="image">
+                                <a href=""><img src="{% static 'images/news2.png' %}" alt="" /></a>
+                            </div>
+                            <!-- NEWS CONTENT / محتوى الخبر -->
+                            <div class="lower-content">
+                                <h5><a href="">urban developments Luxurious Business Destinations.</a></h5>
+                                <!-- NEWS META / معلومات الخبر -->
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-calendar"></span>15 Augst 2022</li>
+                                    <a href="" class="read-more"><span class="txt">Read More</span></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEWS BLOCK 3 / كتلة الخبر الثالث -->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <!-- NEWS IMAGE / صورة الخبر -->
+                            <div class="image">
+                                <a href=""><img src="{% static 'images/news3.jpg' %}" alt="" /></a>
+                            </div>
+                            <!-- NEWS CONTENT / محتوى الخبر -->
+                            <div class="lower-content">
+                                <h5><a href="">urban developments Luxurious Business Destinations.</a></h5>
+                                <!-- NEWS META / معلومات الخبر -->
+                                <ul class="post-meta">
+                                    <li><span class="icon flaticon-calendar"></span>15 Augst 2022</li>
+                                    <a href="" class="read-more"><span class="txt">Read More</span></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END NEWS SECTION / نهاية قسم الأخبار -->
+
+{%endblock%}

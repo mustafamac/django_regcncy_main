@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ================================
+     COUNTER SECTION / قسم العد الإحصائي
+     ================================ -->
+<section class="counter-area">
+    <div class="auto-container">
+        <div class="row align-iems-center">
+            <!-- COUNTER 1: EXPERIENCE YEARS / العداد 1: سنوات الخبرة -->
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <i class="flaticon-medal"></i>
+                    <h3><span class="counter">30</span></h3>
+                    <p>Experience <br> of Years</p>
+                </div>
+            </div>
+
+            <!-- COUNTER 2: TEAM MEMBERS / العداد 2: أعضاء الفريق -->
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <i class="flaticon-team"></i>
+                    <h3><span class="counter">99</span></h3>
+                    <p>Our Experience <br> Team </p>
+                </div>
+            </div>
+
+            <!-- COUNTER 3: BUILDINGS UNDER CONSTRUCTION / العداد 3: المباني تحت الإنشاء -->
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <i class="flaticon-pencil-and-ruler"></i>
+                    <h3><span class="counter">3</span></h3>
+                    <p>Building Under <br> Construction</p>
+                </div>
+            </div>
+
+            <!-- COUNTER 4: COMPLETED PROJECTS / العداد 4: المشاريع المكتملة -->
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <i class="flaticon-home"></i>
+                    <h3><span class="counter">5</span></h3>
+                    <p>Completed <br> Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END COUNTER SECTION / نهاية قسم العد الإحصائي -->
+
+<!-- ================================
+     SUBSCRIBE FORM SECTION / قسم نموذج الاشتراك
+     ================================ -->
+<section class="faq-section">
+    <div class="auto-container">
+        <div class="row align-items-center clearfix">
+            <!-- IMAGE COLUMN / عمود الصورة -->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                </div>
+            </div>
+
+            <!-- FORM COLUMN / عمود النموذج -->
+            <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <!-- SUBSCRIBE FORM CONTENT / محتوى نموذج الاشتراك -->
+                    <div class="content-column">
+                        <div class="inner-column">
+                            <!-- FORM TITLE / عنوان النموذج -->
+                            <div class="sec-title">
+                                <h2>Stay Updated</h2>
+                                <p>Get the latest news about our projects, special offers, and exclusive updates delivered right to your inbox.</p>
+                            </div>
+
+                            <!-- SUBSCRIBE FORM / نموذج الاشتراك -->
+                            <div class="default-form">
+                                <form method="post" action="#">
+                                    <!-- FULL NAME FIELD / حقل الاسم الكامل -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <input type="text"
+                                            name="name"
+                                            placeholder="Full Name"
+                                            required>
+                                    </div>
+
+                                    <!-- EMAIL FIELD / حقل البريد الإلكتروني -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <input type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            required>
+                                    </div>
+
+                                    <!-- PHONE FIELD / حقل الهاتف -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <input type="text"
+                                            name="phone"
+                                            placeholder="Phone"
+                                            required>
+                                    </div>
+
+                                    <!-- CATEGORY FIELD / حقل التصنيف -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <select name="category" required>
+                                            <option value="">Select Interest Category</option>
+                                            <option value="residential">Residential Projects</option>
+                                            <option value="commercial">Commercial Projects</option>
+                                            <option value="business">Business Towers</option>
+                                            <option value="all">All Projects</option>
+                                        </select>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- END SUBSCRIBE FORM / نهاية نموذج الاشتراك -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SUBSCRIBE FORM SECTION / نهاية قسم نموذج الاشتراك -->
+<!-- ================================
+     SOCIAL MEDIA SECTION / قسم وسائل التواصل الاجتماعي
+     ================================ -->
+<section class="services-area">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <h2>Follow Us</h2>
+            <div class="bar"></div>
+        </div>
+
+        <div class="row">
+            <!-- FACEBOOK / فيسبوك -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-services">
+                    <i class="fab fa-facebook-f"></i>
+                    <h3>Facebook</h3>
+                    <p>
+                        Join our community on Facebook and stay connected with the latest updates, project announcements, and exclusive news about our developments.
+                    </p>
+                    <a href="#" class="read-more">
+                        Follow Us
+                        <span class="flaticon-next"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TWITTER / تويتر -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-services">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>
+                        Follow us on Twitter for real-time updates, industry insights, and engaging conversations about real estate and urban development.
+                    </p>
+                    <a href="#" class="read-more">
+                        Follow Us
+                        <span class="flaticon-next"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- LINKEDIN / لينكدإن -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-services">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>
+                        Connect with us on LinkedIn to explore career opportunities and stay updated with our professional achievements and business developments.
+                    </p>
+                    <a href="#" class="read-more">
+                        Follow Us
+                        <span class="flaticon-next"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- INSTAGRAM / إنستجرام -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-services">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>
+                        Follow our Instagram for stunning visual stories, behind-the-scenes content, and beautiful showcases of our architectural projects.
+                    </p>
+                    <a href="#" class="read-more">
+                        Follow Us
+                        <span class="flaticon-next"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- YOUTUBE / يوتيوب -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-services">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>
+                        Subscribe to our YouTube channel to watch project videos, virtual tours, and informative content about our developments.
+                    </p>
+                    <a href="#" class="read-more">
+                        Subscribe
+                        <span class="flaticon-next"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SOCIAL MEDIA SECTION / نهاية قسم وسائل التواصل الاجتماعي -->
+
+
+
+{% endblock %}
